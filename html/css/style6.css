@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    border: 1px solid black;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.box1 {
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    z-index: 0;
+}
+
+.box2 {
+    background-color: yellow;
+}
+
+.container {
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 50px;
+}

@@ -1,0 +1,69 @@
+/* 전체 페이지 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 상단 네비게이션 바 스타일 */
+nav {
+  background-color: #0072c6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* 로고 이미지 스타일 */
+nav img {
+  height: 50px;
+}
+
+/* 메인 컨텐츠 영역 스타일 */
+main {
+  margin-top: 80px;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #f7f7f7;
+  border-top: 1px solid #d1d1d1;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 50px;
+}

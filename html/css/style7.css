@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.outer {
+    display: flex;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-evenly;
+    background-color: yellowgreen;
+    border: 2px solid red;
+    width: 600px;
+}
+.item {
+    background-color: aquamarine;
+    opacity: 0.5;
+    border: 2px solid black;
+    font-size: 2rem;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+.item:nth-child(1) {
+    order:3
+}
+.item:nth-child(2) {
+    order:1
+}
+.item:nth-child(3) {
+    order:2
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <label>아이디<input type="text" required></label><br>
+            <label>패스워드<input type="password" autofocus></label>
+        </fieldset>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <label>이름<input type="text" placeholder="영문으로 입력하세요"></label><br>
+            <label>나이<input type="text" size="5"></label><br>
+            <label>자기소개</label> <textarea cols="30" rows="10"></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>MT장소</legend>
+            <label><input type="radio" name="site" value="jeju">제주도</label>
+            <label><input type="radio" name="site" value="danang">다낭</label>
+            <label><input type="radio" name="site" value="sydney">시드니</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>저녁메뉴</legend>
+            <label><input type="checkbox" name="dinner" value="menu1">치킨</label>
+            <label><input type="checkbox" name="dinner" value="menu2">피자</label>
+            <label><input type="checkbox" name="dinner" value="menu3">족발</label>
+        </fieldset>
+        <input type="submit" value="제출하기"><input type="reset" value="다시쓰기">
+
+        <select>
+            <option value="archi">건축공학과</option>
+            <option value="mechanic">기계공학과</option>
+            <option value="se" selected>컴퓨터소프트웨어공학과</option>
+        </select>
+
+        <h1>금오공과대학교 가족회사 가입신청서</h1>
+        <fieldset>
+            <legend>기업현황</legend>
+            <label><strong>회사명</strong><input type="text" required></label>
+            <label><strong>대표자</strong><input type="text"></label>
+            <label><input type="radio" name="sex" value="man">남</label>
+            <label><input type="radio" name="sex" value="man">여</label><br>
+            <label><strong>사업자 번호</strong><input type="text" placeholder="NNN-NN-NNNN"></label>
+            <label><strong>설립일</strong><input type="date"></label><br>
+            <label><strong>주소</strong><input type="text"></label>
+            <label><strong>전화번호</strong><input type="tel"></label><br>
+            <label><strong>홈페이지</strong><input type="text"></label><br>
+            <label><strong>근무시간</strong><input type="time">~<input type="time"></label><br>
+            <label><strong>기업형태</strong></label>
+            <label>대기업<input type="radio" name="corp" value="big"></label>
+            <label>중견기업<input type="radio" name="corp" value="mid"></label>
+            <label>중소기업<input type="radio" name="corp" value="small"></label><br>
+            <label><strong>전년도매출액</strong><input type="text" placeholder="백만원"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>가입내용</legend>
+            <label><strong>구분(연회비)</strong></label>
+            <label>1st(100만원)<input type="radio" name="tier" value="1st"></label>
+            <label>2nd(60만원)<input type="radio" name="tier" value="2nd"></label>
+            <label>3rd(30만원)<input type="radio" name="tier" value="3rd"></label>
+            <label>4th(무료)<input type="radio" name="tier" value="4th"></label><br>
+            <label><strong>멘토교수</strong></label>
+            <label>학과</label>
+            <select>
+                <option value="archi">건축공학과</option>
+                <option value="mechanic">기계공학과</option>
+                <option value="se" selected>컴퓨터소프트웨어공학과</option>
+            </select>
+            <label>성명<input type="text"></label>
+            <hr>
+            <label><strong>산학협력희망분야</strong></label><br>
+            <label>기술개발<input type="checkbox" name="part" value="1"></label>
+            <label>기술지도<input type="checkbox" name="part" value="2"></label>
+            <label>현장실습<input type="checkbox" name="part" value="3"></label><br>
+            <label>재직자교육<input type="checkbox" name="part" value="4"></label>
+            <label>공용장비활용<input type="checkbox" name="part" value="5"></label>
+            <label>기타<input type="text" name="part"></label>
+        </fieldset>
+        <input type="submit" value="제출하기"><input type="reset" value="다시입력">
+    </form>
+</body>
+</html>

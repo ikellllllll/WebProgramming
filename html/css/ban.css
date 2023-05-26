@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+}
+
+.item {
+    flex: 33%;
+    line-height: 100px;
+}
+
+.item:nth-child(1),
+.item:nth-child(3) {
+    background-color: #f1f1f1;
+}
+
+.item:nth-child(2) {
+    background-color: dodgerblue;
+}
+
+@media (600px <= width < 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item:nth-child(1){
+        order: 2;
+    }
+
+    .item:nth-child(2){
+        order: 1;
+    }
+
+    .item:nth-child(3){
+        order: 3;
+    }
+}
+
+@media (width < 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item:nth-child(1){
+        order: 2;
+    }
+
+    .item:nth-child(2){
+        order: 1;
+    }
+
+    .item:nth-child(3){
+        display: none;
+    }
+}

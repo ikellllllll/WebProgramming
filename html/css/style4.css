@@ -1,0 +1,40 @@
+.main-part {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 5px;
+  }
+  .cpanel {
+    width: 32%;
+    display: inline-block;
+    background-color: #34495e;
+    color: #fff;
+    margin-top: 50px;
+  }
+  .icon-part i {
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: -25px;
+    margin-bottom: 10px;
+    background-color: #34495e;
+  }
+  .icon-part p {
+    margin: 0px;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .card-content-part {
+    background-color: #2f4254;
+    padding: 5px 0px;
+  }
+  .cpanel .card-content-part:hover {
+    background-color: #5a5a5a;
+    cursor: pointer;
+  }
+  .card-content-part a {
+    color: #fff;
+    text-decoration: none;
+  }
+  

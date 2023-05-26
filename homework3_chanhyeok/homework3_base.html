@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js/homework3_itemImage.js"></script>
+    <script defer src="js/homework3_owner.js"></script>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+        href="css/homework3_style.css"
+        rel="stylesheet"
+        type="text/css"
+    />
+</head>
+<body>
+    <div class = "container">
+        <div class="image_container">
+            <div class = "image_main">
+                <div class = "image_box">
+                    <img src="img/homework3/img_01.jpg" alt="대표이미지">
+                </div>
+                <div class="button_container">
+                    <button type="button" class="main_image_button button_left" onclick="pushSlides(-1)">
+                        <span class="blind">이전 상품이미지</span>
+                    </button>
+                    <button type="button" class="main_image_button button_right" onclick="pushSlides(1)">
+                        <span class="blind">다음 상품이미지</span>
+                    </button>
+                </div>
+            </div>
+            <ul class="mini_image_container">
+                <li class="image_mini">
+                    <a href="#" class="image_button" type="button" aria-selected="true">
+                        <img src="img/homework3/img_01.jpg" width="40" height="40" alt="추가이미지">
+                    </a>
+                </li>
+                <li class="image_mini">
+                    <a href="#" class="image_button" type="button" aria-selected="false">
+                        <img src="img/homework3/img_02.jpg" width="40" height="40" alt="추가이미지">
+                    </a>
+                </li>
+                <li class="image_mini">
+                    <a href="#" class="image_button" type="button" aria-selected="false">
+                        <img src="img/homework3/img_03.jpg" width="40" height="40" alt="추가이미지">
+                    </a>
+                </li>
+                <li class="image_mini">
+                    <a href="#" class="image_button" type="button" aria-selected="false">
+                        <img src="img/homework3/img_04.jpg" width="40" height="40" alt="추가이미지">
+                    </a>
+                </li>
+                <li class="image_mini">
+                    <a href="#" class="image_button" type="button" aria-selected="false">
+                        <img src="img/homework3/img_05.jpg" width="40" height="40" alt="추가이미지">
+                    </a>
+                </li>
+                <li class="image_mini">
+                    <a href="#" class="image_button" type="button" aria-selected="false">
+                        <img src="img/homework3/img_06.jpg" width="40" height="40" alt="추가이미지">
+                    </a>
+                </li>
+                <li class="image_mini">
+                    <a href="#" class="image_button" type="button" aria-selected="false">
+                        <img src="img/homework3/img_07.jpg" width="40" height="40" alt="추가이미지">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="text_container">
+            <fieldset class="text_field">
+                <div class="item_content">
+                    <div class="item_name">
+                        <h3 class="name">2023 코베아 네스트W/이너텐트 루프플라이 그라운드시트 포함</h3>
+                    </div>
+                    <div class="item_price">
+                        <div class="price_box">
+                            <strong class="price"><span>730,000원</span></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_container">
+                    <div class="list_box">
+                        <a href="#" type="button" class="color_list" aria-expanded="false" aria-haspopup="listbox">
+                            컬러
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="#acb2bc" fill-rule="evenodd" class="svg_button">
+                                    <path d="M13 2v1h-1v1h-1v1h-1v1H9v1H8v1H6V7H5V6H4V5H3V4H2V3H1V2H0V0h1v1h1v1h1v1h1v1h1v1h1v1h2V5h1V4h1V3h1V2h1V1h1V0h1v2h-1z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                        <ul role="listbox" class="item_list">
+                            <li role="presentation" class="item_box">
+                                <a href="#" class="item" role="option">
+                                    카키
+                                </a>
+                            </li>
+                            <li role="presentation" class="item_box">
+                                <a href="#" class="item" role="option">
+                                    브라운
+                                </a>
+                            </li>
+                            <li role="presentation" class="item_box">
+                                <a href="#" class="item" role="option">
+                                    탄
+                                </a>
+                            </li>
+                            <li role="presentation" class="item_box">
+                                <a href="#" class="item" role="option">
+                                    아이보리
+                                </a>
+                            </li>
+                            <li role="presentation" class="item_box">
+                                <a href="#" class="item" role="option">
+                                    블랙
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contain_item_list">
+                    <ul class="contain_list">
+                        <li class="contain_item_box" aria-disabled="true">
+                            <div class="contain_item">
+                                <p class="item_name">카키</p>
+                                <div class="item_content">
+                                    <div class="item_count_box">
+                                        <button type="button" class="sub_button disabled" disabled></button>
+                                        <input type="number" class="this_kind_count", value="0">
+                                        <button type="button" class="add_button"></button>
+                                    </div>
+                                    <span class="this_kind_total_amount">
+                                        <span class="this_kind_amount">730,000</span>
+                                        원
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="cancel_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13", height="13">
+                                    <path fill="#222" fill-rule="evenodd"
+                                    d="M8 8H7V7h1v1zm1 1H8V8h1v1zm1 1H9V9h1v1zm1 1h-1v-1h1v1zm1
+                                     1h-1v-1h1v1zm1 1h-1v-1h1v1zM6 7V6h1v1H6zM5 8V7h1v1H5zM4 
+                                     9V8h1v1H4zm-1 1V9h1v1H3zm-1 1v-1h1v1H2zm-1 1v-1h1v1H1zm-1 
+                                     1v-1h1v1H0zm5-8h1v1H5V5zM4 4h1v1H4V4zM3 3h1v1H3V3zM2 2h1v1H2V2zM1 
+                                     1h1v1H1V1zM0 0h1v1H0V0zm8 5v1H7V5h1zm1-1v1H8V4h1zm1-1v1H9V3h1zm1-1v1h-1V2h1zm1-1v1h-1V1h1zm1-1v1h-1V0h1z"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="contain_item_box" aria-disabled="true">
+                            <div class="contain_item">
+                                <p class="item_name">브라운</p>
+                                <div class="item_content">
+                                    <div class="item_count_box">
+                                        <button type="button" class="sub_button disabled" disabled></button>
+                                        <input type="number" class="this_kind_count", value="0">
+                                        <button type="button" class="add_button"></button>
+                                    </div>
+                                    <span class="this_kind_total_amount">
+                                        <span class="this_kind_amount">730,000</span>
+                                        원
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="cancel_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13", height="13">
+                                    <path fill="#222" fill-rule="evenodd"
+                                    d="M8 8H7V7h1v1zm1 1H8V8h1v1zm1 1H9V9h1v1zm1 1h-1v-1h1v1zm1
+                                     1h-1v-1h1v1zm1 1h-1v-1h1v1zM6 7V6h1v1H6zM5 8V7h1v1H5zM4 
+                                     9V8h1v1H4zm-1 1V9h1v1H3zm-1 1v-1h1v1H2zm-1 1v-1h1v1H1zm-1 
+                                     1v-1h1v1H0zm5-8h1v1H5V5zM4 4h1v1H4V4zM3 3h1v1H3V3zM2 2h1v1H2V2zM1 
+                                     1h1v1H1V1zM0 0h1v1H0V0zm8 5v1H7V5h1zm1-1v1H8V4h1zm1-1v1H9V3h1zm1-1v1h-1V2h1zm1-1v1h-1V1h1zm1-1v1h-1V0h1z"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="contain_item_box" aria-disabled="true">
+                            <div class="contain_item">
+                                <p class="item_name">탄</p>
+                                <div class="item_content">
+                                    <div class="item_count_box">
+                                        <button type="button" class="sub_button disabled" disabled></button>
+                                        <input type="number" class="this_kind_count", value="0">
+                                        <button type="button" class="add_button"></button>
+                                    </div>
+                                    <span class="this_kind_total_amount">
+                                        <span class="this_kind_amount">730,000</span>
+                                        원
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="cancel_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13", height="13">
+                                    <path fill="#222" fill-rule="evenodd"
+                                    d="M8 8H7V7h1v1zm1 1H8V8h1v1zm1 1H9V9h1v1zm1 1h-1v-1h1v1zm1
+                                     1h-1v-1h1v1zm1 1h-1v-1h1v1zM6 7V6h1v1H6zM5 8V7h1v1H5zM4 
+                                     9V8h1v1H4zm-1 1V9h1v1H3zm-1 1v-1h1v1H2zm-1 1v-1h1v1H1zm-1 
+                                     1v-1h1v1H0zm5-8h1v1H5V5zM4 4h1v1H4V4zM3 3h1v1H3V3zM2 2h1v1H2V2zM1 
+                                     1h1v1H1V1zM0 0h1v1H0V0zm8 5v1H7V5h1zm1-1v1H8V4h1zm1-1v1H9V3h1zm1-1v1h-1V2h1zm1-1v1h-1V1h1zm1-1v1h-1V0h1z"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="contain_item_box" aria-disabled="true">
+                            <div class="contain_item">
+                                <p class="item_name">아이보리</p>
+                                <div class="item_content">
+                                    <div class="item_count_box">
+                                        <button type="button" class="sub_button disabled" disabled></button>
+                                        <input type="number" class="this_kind_count", value="0">
+                                        <button type="button" class="add_button"></button>
+                                    </div>
+                                    <span class="this_kind_total_amount">
+                                        <span class="this_kind_amount">730,000</span>
+                                        원
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="cancel_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13", height="13">
+                                    <path fill="#222" fill-rule="evenodd"
+                                    d="M8 8H7V7h1v1zm1 1H8V8h1v1zm1 1H9V9h1v1zm1 1h-1v-1h1v1zm1
+                                     1h-1v-1h1v1zm1 1h-1v-1h1v1zM6 7V6h1v1H6zM5 8V7h1v1H5zM4 
+                                     9V8h1v1H4zm-1 1V9h1v1H3zm-1 1v-1h1v1H2zm-1 1v-1h1v1H1zm-1 
+                                     1v-1h1v1H0zm5-8h1v1H5V5zM4 4h1v1H4V4zM3 3h1v1H3V3zM2 2h1v1H2V2zM1 
+                                     1h1v1H1V1zM0 0h1v1H0V0zm8 5v1H7V5h1zm1-1v1H8V4h1zm1-1v1H9V3h1zm1-1v1h-1V2h1zm1-1v1h-1V1h1zm1-1v1h-1V0h1z"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="contain_item_box" aria-disabled="true">
+                            <div class="contain_item">
+                                <p class="item_name">블랙</p>
+                                <div class="item_content">
+                                    <div class="item_count_box">
+                                        <button type="button" class="sub_button disabled" disabled></button>
+                                        <input type="number" class="this_kind_count", value="0">
+                                        <button type="button" class="add_button"></button>
+                                    </div>
+                                    <span class="this_kind_total_amount">
+                                        <span class="this_kind_amount">730,000</span>
+                                        원
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="cancel_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13", height="13">
+                                    <path fill="#222" fill-rule="evenodd"
+                                    d="M8 8H7V7h1v1zm1 1H8V8h1v1zm1 1H9V9h1v1zm1 1h-1v-1h1v1zm1
+                                     1h-1v-1h1v1zm1 1h-1v-1h1v1zM6 7V6h1v1H6zM5 8V7h1v1H5zM4 
+                                     9V8h1v1H4zm-1 1V9h1v1H3zm-1 1v-1h1v1H2zm-1 1v-1h1v1H1zm-1 
+                                     1v-1h1v1H0zm5-8h1v1H5V5zM4 4h1v1H4V4zM3 3h1v1H3V3zM2 2h1v1H2V2zM1 
+                                     1h1v1H1V1zM0 0h1v1H0V0zm8 5v1H7V5h1zm1-1v1H8V4h1zm1-1v1H9V3h1zm1-1v1h-1V2h1zm1-1v1h-1V1h1zm1-1v1h-1V0h1z"></path>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="total_amount_container">
+                    <strong class="total_text">총 상품 금액</strong>
+                    <div class="total">
+                        <em class="total_count">
+                            총 수량
+                            0
+                            개
+                        </em>
+                        <strong class="total_amount">
+                            <span class="amount">0</span>원
+                        </strong>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
